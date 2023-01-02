@@ -1,4 +1,0 @@
-Initial Image Size : 32 x 32
-Resizes to : 608 x 608
-Resizes In Game to : 20 x 20
-brown frame: 30px
