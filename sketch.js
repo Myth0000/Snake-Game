@@ -67,7 +67,7 @@ function draw() {
 
     // closeHelpMenuButton
     closeHelpMenuButton.size(100, 30);
-    closeHelpMenuButton.position(width / 2 - 50, height / 1.45);
+    closeHelpMenuButton.position(document.documentElement.clientWidth / 2 - 50, height / 2 + 160);
     closeHelpMenuButton.style("background-color", "#4b0808");
 
     pop();
@@ -127,14 +127,14 @@ function showPlayScreen() {
 
   push();
   // playButton
-  playButton.position(width / 2 - 80, height / 2 - 10);
+  playButton.position(document.documentElement.clientWidth/2 - 80, height/2 + 75);
   playButton.size(160, 70);
   playButton.style("background-color", "#084b16");
   playButton.style("font-size", "40px");
 
   // helpButton
   helpButton.size(100, 30);
-  helpButton.position(width / 2 - 50, height / 2 + 70);
+  helpButton.position(document.documentElement.clientWidth / 2 - 50, height / 2 + 155);
   helpButton.style("background-color", "#084b16");
 
   // game title
@@ -154,10 +154,12 @@ function createNewGame() {
 function showEndScreen() {
   push();
   // playButton
-  playButton.style("display", "block"); // makes the button visible
+  playButton.style("display", "inline-block"); // makes the button visible
+  playButton.position(document.documentElement.clientWidth/2 - 80, height/2 + 75);
   playButton.style("opacity", 0.5);
 
-  helpButton.style("display", "block");
+  helpButton.style("display", "inline-block");
+  helpButton.position(document.documentElement.clientWidth / 2 - 50, height / 2 + 155);
   helpButton.style("opacity", 0.5);
 
   // texts
